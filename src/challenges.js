@@ -1,7 +1,40 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+
+// JavaScript possui um operador lógico &&, o qual recebe dois valores e retorna true se ambos os valores são verdadeiros, e retorna false se algum dos valores não o for.
+
+// Considerando isso, implemente na função compareTrue, um código que ao receber dois parâmetros booleanos deve:
+
+// Retornar true se ambos os valores forem verdadeiros;
+// Retornar false se um ou ambos os parâmetros forem falsos.
+
+function compareTrue(boolean1,boolean2) {
+  if(boolean1===true && boolean2===true){
+    return true;
+  } else{
+    return false;
+  }
 }
+console.log(compareTrue(false,false));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 2
 function calcArea() {
@@ -63,5 +96,5 @@ module.exports = {
   highestCount,
   splitSentence,
   techList,
-  
+
 };
