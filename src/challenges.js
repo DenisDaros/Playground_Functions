@@ -37,9 +37,42 @@ return array;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+// Escreva uma função com o nome concatName que, ao receber uma array de strings, retorne uma string com o formato 'ÚLTIMO ITEM, PRIMEIRO ITEM', independente do tamanho da array.
+
+// Isso quer dizer que, caso o parâmetro passado para concatName seja a Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar Paolillo, Lucas.
+
+function concatName(strings) {
+  let inversao=strings [strings.length-1]+","+" "+ strings[0]
+  return inversao;
 }
+console.log(concatName(['captain', 'my', 'captain']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 5
 function footballPoints() {
