@@ -13,33 +13,33 @@ function compareTrue(boolean1,boolean2) {
   } else{
     return false;
   }
-}
-console.log(compareTrue(false,false));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+// Escreva uma função com o nome calcArea que receba um valor de base (chamado base) e outro de altura (chamado height) de um triângulo e retorne o cálculo da sua área.
+
+// Lembre-se que a área de um triângulo é calculada através da seguinte fórmula: (base * altura) / 2.
+
+function calcArea(base,altura) {
+  areaTriangulo=(base * altura) / 2
+  return areaTriangulo;
+} 
+
+console.log(calcArea(5,2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 3
 function splitSentence() {
