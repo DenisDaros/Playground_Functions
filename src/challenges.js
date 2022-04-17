@@ -77,15 +77,6 @@ function highestCount(arrayNumeros){
   }
   return maiorNumeroRepete
 }
- 
-
-
-
-
-
-
-
-
 
 // Desafio 7
 
@@ -138,12 +129,33 @@ function fizzBuzz(array) {
   return arrayStrings
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+// Crie duas funções: a primeira deverá se chamar encode e, ao receber uma string como parâmetro, deverá trocar todas as vogais minúsculas por números, de acordo com o formato a seguir:
+
+// a -> 1 // e -> 2 // i -> 3 // o -> 4 // u -> 5
+
+// Ou seja, caso o parâmetro de encode seja "hi there!", o retorno deverá ser "h3 th2r2!".
+
+// A segunda função deverá se chamar decode e faz o contrário de encode - ou seja, recebe uma string contendo números no lugar de letras minúsculas e retornará uma string com vogais minúsculas no lugar dos números (então, caso o parâmetro de decode seja "h3 th2r2!", o retorno deverá ser "hi there!").
+
+function encode(string) {
+  let novaString = string.replace(/a/gi, '1')
+  .replace(/e/gi, '2')
+  .replace(/i/gi, '3')
+  .replace(/o/gi, '4')
+  .replace(/u/gi, '5');
+return novaString; 
 }
-function decode() {
-  // seu código aqui
+
+function decode(stringNumeros) {
+  let novaStringNumeros = stringNumeros.replace(/1/gi, 'a')
+  .replace(/2/gi, 'e')
+  .replace(/3/gi, 'i')
+  .replace(/4/gi, 'o')
+  .replace(/5/gi, 'u');
+  return novaStringNumeros;
 }
+
+// link de referência via Slack Jo nathan Souza - Turma 10 - Tribo B 
 
 // Desafio 10
 function techList() {
